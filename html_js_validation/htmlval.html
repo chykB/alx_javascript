@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Validation</title>
+</head>
+<body>
+    <h1>Sign Up Form</h1>
+    <form id="signup-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required minlength="3" maxlength="20">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="120">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8">
+        <br>
+        <button type="submit">Sign Up</button>
+    </form>
+
+    <!-- required: Ensures the "name", "email", and "password" fields must be filled in.
+minlength: Makes sure the "name" field has at least 3 characters and the "password" field has at least 8 characters.
+maxlength: Limits the "name" field to 20 characters.
+type: Restricts the "email" field to accept only email addresses and the "age" field to accept only numbers.
+min: Sets the minimum allowed age to 18.
+max: Sets the maximum allowed age to 120. -->
+</body>
+</html>
